@@ -93,6 +93,6 @@ From the results shown above, the following observations can be made:
   **domain-specific pretrained models are not always better**, and choosing a pretrained model whose pretraining domain matches the target task is crucial for achieving good performance.
 
 
-# Acknowledgements
-1. [BERT](https://https://huggingface.co/docs/transformers/model_doc/bert)
-2. [SciBERT](https://huggingface.co/allenai/scibert_scivocab_uncased)
+# Models used
+1. [BERT](https://https://google-bert/bert-base-uncased)
+2. [SciBERT](https://allenai/scibert_scivocab_uncased)
