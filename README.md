@@ -1,4 +1,41 @@
 # NLP_tutorial
+# Word2Vec → Sentence Similarity → BERT Models for Sentiment Classification
+
+This repository provides a **hands-on tutorial** that helps students understand the transition from:
+
+**traditional word-level embeddings → modern contextual sentence representations using Transformer models.**
+
+The tutorial is divided into two parts:
+
+- **Part 1 – Traditional word embeddings (Word2Vec / GloVe)**  Hands_on_NLP1.ipynb
+- **Part 2 – Transformer-based models (BERT family)** BERT_training.ipynb
+ 
+The main objective of this tutorial is to clearly demonstrate how **representation learning evolved** from:
+
+- static word vectors  
+to  
+- contextual, sentence-level representations used in modern NLP systems.
+
+## Prerequisites
+
+Basic familiarity with:
+
+- Python
+- NumPy / pandas
+- PyTorch (basic level)
+- Jupyter Notebook
+
+---
+
+## Installation
+
+It is recommended to use a virtual environment.
+
+```bash
+pip install numpy pandas scikit-learn gensim
+pip install torch transformers datasets
+pip install notebook
+```
 
 
 
