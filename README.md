@@ -7,8 +7,8 @@ This repository provides a **hands-on tutorial** that helps students understand 
 
 The tutorial is divided into two parts:
 
-- **Part 1 – Traditional word embeddings (Word2Vec / GloVe)**  Hands_on_NLP1.ipynb
-- **Part 2 – Transformer-based models (BERT family)** BERT_training.ipynb
+- **Part 1 – Traditional word embeddings (Word2Vec / GloVe)**  ```Hands_on_NLP1.ipynb```
+- **Part 2 – Transformer-based models (BERT family)** ```BERT_training.ipynb```
  
 The main objective of this tutorial is to clearly demonstrate how **representation learning evolved** from:
 
@@ -37,6 +37,24 @@ pip install torch transformers datasets
 pip install notebook
 ```
 
+### Types of BERT models used in this project (BERT vs SciBERT)
+
+| Feature | BERT | SciBERT |
+|------|------|--------|
+| Training Objectives | MLM (Masked Language Model), NSP (Next Sentence Prediction) | MLM (Masked Language Model), NSP (Next Sentence Prediction) |
+| Pretraining Corpus | General-domain text (Wikipedia + BooksCorpus) | Scientific text (biomedical and computer science papers) |
+| Domain Focus | General-purpose language understanding | Scientific and technical language understanding |
+| Vocabulary | General-domain WordPiece vocabulary | Domain-specific vocabulary (scientific terminology and symbols) |
+| Tokenization | WordPiece tokenizer | WordPiece tokenizer (trained on scientific corpus) |
+| Next Sentence Prediction (NSP) | Yes | Yes |
+| Sentence Embeddings | Uses the `[CLS]` token representation | Uses the `[CLS]` token representation |
+| Architecture | Same as original BERT architecture | Same as BERT architecture |
+| Model Size | Base / Large (e.g., 12 or 24 layers) | Base-sized architecture (typically 12 layers) |
+| Number of Layers | Configurable, typically 12 (Base) or 24 (Large) | Typically 12 (Base) |
+| Training Duration | Large-scale pretraining on general data | Large-scale pretraining on scientific papers |
+| Language Coverage | Broad, everyday and web-style English | Scientific writing style (papers, abstracts, technical text) |
+| Performance | Strong general benchmark performance | Significantly better performance on scientific NLP tasks (e.g., NER, classification, relation extraction in scientific domains) |
+| Typical Use Case | General NLP tasks such as sentiment analysis, QA, and NLI | Scientific and domain-specific NLP tasks (biomedical and computer science text) |
 
 
 
