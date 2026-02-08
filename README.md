@@ -10,12 +10,13 @@ The file BERT_training.ipynb contains the code for finetuning BERT and SciBERT. 
 
 ## Results
 The table presents results comparing the performance of BERT and SciBERT models without finetuning and after finetuning for 10 epochs. 
-|        | w/o finetuning      | with finetuning      |
-| Models | w/o | w/o | with  | with |
-| Models | Accuracy | F1_macro | Accuracy  | F1_macro |
-|--------|----------|-----------|---------|----------|
-| BERT  |   0.78   |   0.79    |  0.86   |   0.86   |
-| SciBERT  |   0.72   |   0.75    |  0.52   |   0.45   |
+| Model                    | Accuracy | F1 Score |
+|--------------------------|----------|----------|
+| Pretrained BERT          | 0.78     | 0.79     |
+| Pretrained SciBERT       | 0.72     | 0.75     |
+| Fine-tuned BERT (10 ep)  | 0.86     | 0.86     |
+| Fine-tuned SciBERT (10 ep)| 0.52    | 0.45     |
+
 
 
 # Acknowledgements
