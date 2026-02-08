@@ -72,6 +72,25 @@ The table presents results comparing the performance of BERT and SciBERT models 
 | Fine-tuned BERT (10 ep)  | 0.86     | 0.86     |
 | Fine-tuned SciBERT (10 ep)| 0.52    | 0.45     |
 
+## Observations
+
+From the results shown above, the following observations can be made:
+
+- Fine-tuning substantially improves the performance of the standard BERT model.  
+  The accuracy increases from **0.78 to 0.86** and the F1 score from **0.79 to 0.86**, indicating that task-specific supervision is highly effective for general-domain BERT.
+
+- In contrast, SciBERT does **not** benefit from fine-tuning on this dataset.  
+  Its performance drops sharply after fine-tuning (accuracy from **0.72 to 0.52**, F1 score from **0.75 to 0.45**).
+
+- The superior performance of BERT over SciBERT suggests that the dataset used in this project is likely **general-domain and sentiment-oriented**, rather than scientific or technical in nature.
+
+- SciBERT is pretrained on scientific literature, and its vocabulary and language representations are specialized for scientific writing.  
+  When applied to a general sentiment classification task, this domain mismatch can lead to weaker representations and unstable fine-tuning.
+
+- The large degradation in SciBERT’s fine-tuned performance may also indicate **overfitting or optimization instability**, especially if the training dataset is small or contains informal language (e.g., reviews, social media text).
+
+- Overall, these results highlight an important practical insight:  
+  **domain-specific pretrained models are not always better**, and choosing a pretrained model whose pretraining domain matches the target task is crucial for achieving good performance.
 
 
 # Acknowledgements
