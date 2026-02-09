@@ -36,6 +36,9 @@ pip install numpy pandas scikit-learn gensim
 pip install torch transformers datasets
 pip install notebook
 ```
+## Word2Vec weights 
+[Word2Vec](https://drive.google.com/file/d/1E_eaAUv1JKf7db6BeQCuTlC_dkFN7FOi/view?usp=sharing)
+
 
 ### Types of BERT models used in this project (BERT vs SciBERT)
 
