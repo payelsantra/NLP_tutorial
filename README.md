@@ -7,7 +7,7 @@ This repository provides a **hands-on tutorial** that helps students understand 
 
 The tutorial is divided into two parts:
 
-- **Part 1 – Traditional word embeddings (Word2Vec / GloVe)**  ```Hands_on_NLP1.ipynb```
+- **Part 1 – Traditional word embeddings (Word2Vec / GloVe)**  ```Hands_on_NLP.ipynb```
 - **Part 2 – Transformer-based models (BERT family)** ```BERT_training.ipynb```
  
 The main objective of this tutorial is to clearly demonstrate how **representation learning evolved** from:
